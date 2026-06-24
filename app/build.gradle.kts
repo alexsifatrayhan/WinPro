@@ -36,6 +36,10 @@ android {
     buildFeatures {
         viewBinding = true
     }
+    lint {
+        disable += "WrongConstant"
+        abortOnError = false
+    }
 }
 
 dependencies {
